@@ -1,0 +1,40 @@
+.feature__container {
+    background: $mainBlue;
+
+    .feature {
+        &__wrapper {
+            margin: auto;
+            width: 61%;
+            padding: 5rem 0 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &__card {
+            text-align: center;
+            width: 21rem;
+            margin-top: 5rem;
+
+            &:nth-child(2) {
+                img {
+                    width: 4rem;
+                }
+            }
+
+            img {
+                width: 5rem;
+
+            }
+
+            h3 {
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 13.2px;
+            }
+        }
+    }
+}
