@@ -4,41 +4,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="dist/style.css">
   <title>Fylo Dark landing page</title>
 </head>
 
 <body>
+  <section class="intro">
+    <header class="header">
+      <div class="header__logo">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <div class="header__links">
+        <nav>
+          <a href="#">Features</a>
+          <a href="#">Team</a>
+          <a href="#">Sign In</a>
+        </nav>
+      </div>
+    </header>
+    <div class="intro__wrapper">
+      <div class="intro__image">
+        <img src="images/illustration-intro.png" alt="intro">
+      </div>
+      <div class="intro__text">
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+        <p>Fylo stores all your most important files in one secure location. Access them wherever
+          you need, share and collaborate with friends family, and co-workers.</p>
+        <button class="button">Get Started</button>
+      </div>
+    </div>
+  </section>
+  
   <!--
-  Features
-  Team
-  Sign In
-
-  All your files in one secure location, accessible anywhere.
-
-  Fylo stores all your most important files in one secure location. Access them wherever
-  you need, share and collaborate with friends family, and co-workers.
-
-  Get Started
-
-  Access your files, anywhere
-
-  The ability to use a smartphone, tablet, or computer to access your account means your
-  files follow you everywhere.
-
-  Security you can trust
-
-  2-factor authentication and user-controlled encryption are just a couple of the security
-  features we allow to help secure your files.
-
-  Real-time collaboration
-
-  Securely share files and folders with friends, family and colleagues for live collaboration.
-  No email attachments required.
-
-  Store any type of file
-
-  Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
-  file types to be securely stored and shared.
+  <section class="feature__container">
+    <div class="feature__card">
+      <img src="images/icon-access-anywhere.svg" alt="access">
+      <h3>Access your files, anywhere</h3>
+      <p>The ability to use a smartphone, tablet, or computer to access your account means your
+        files follow you everywhere.</p>
+    </div>
+    <div class="feature__card">
+      <img src="images/icon-security.svg" alt="security">
+      <h3>Security you can trust</h3>
+      <p>2-factor authentication and user-controlled encryption are just a couple of the security
+        features we allow to help secure your files.</p>
+    </div>
+    <div class="feature__card">
+      <img src="images/icon-collaboration.svg" alt="collaboration">
+      <h3>Real-time collaboration</h3>
+      <p>Securely share files and folders with friends, family and colleagues for live collaboration.
+        No email attachments required.</p>
+    </div>
+    <div class="feature__card">
+      <img src="images/icon-any-file.svg" alt="file">
+      <h3>Store any type of file</h3>
+      <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
+        file types to be securely stored and shared.</p>
+    </div>
+  </section>
 
   Stay productive, wherever you are
 
