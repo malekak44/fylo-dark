@@ -1,36 +1,92 @@
 .testimonial {
     &__container {
         background: $mainBlue;
-        padding: 8rem 0;
+        padding: 4.7rem 0;
+
+        @include breakpoint-up(medium) {
+            padding: 8rem 0;
+        }
     }
 
-    &__wrapper {}
+    &__wrapper {
+        background-image: url("../images/bg-quotes.png");
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0;
+        padding-top: 15px;
+        max-width: 75%;
+        margin: 0 auto;
+        background-size: 7.5%;
+        background-position-x: 5px;
+
+        @include breakpoint-up(medium) {
+            max-width: 69rem;
+            background-size: auto;
+            padding-top: 2.15rem;
+            background-position-x: initial;
+        }
+    }
 
     &__card {
+        background-color: $testimonialBlue;
+        border-radius: 0.393rem;
+        max-width: 21.2rem;
+        margin-bottom: 1.5rem;
+        padding: 28px 20px 24px;
+
+        @include breakpoint-up(medium) {
+            margin-bottom: 0;
+            padding: 40px 24px 24px;
+        }
+
+        &:not(:last-child) {
+            margin-right: 0;
+
+            @include breakpoint-up(medium) {
+                margin-right: 1.8rem;
+            }
+        }
+
         p {
             margin: 0;
+            font-weight: 400;
+            font-size: 10px;
+            letter-spacing: 0.5px;
+            line-height: 1.7;
+
+            @include breakpoint-up(medium) {
+                font-size: 13px;
+                line-height: 1.5;
+            }
         }
 
         .profile {
             display: flex;
             align-items: center;
+            margin-top: 1.2rem;
 
             img {
-                width: 45px;
+                width: 23px;
                 border-radius: 50%;
             }
 
             .info {
                 margin-left: 0.5rem;
 
-                p:first-child {
-                    font-size: 0.875rem;
+                span:first-child {
+                    font-size: 10px;
                     font-weight: 600;
                     margin-bottom: 3px;
+                    display: block;
                 }
 
-                p:last-child {
-                    font-size: 0.75rem;
+                span:last-child {
+                    font-size: 7px;
+                    display: block;
                 }
             }
         }

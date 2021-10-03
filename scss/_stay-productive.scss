@@ -5,15 +5,34 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        max-width: 72rem;
         margin: auto;
+        flex-direction: column;
+        padding: 5rem 0;
+        max-width: 85%;
+
+        @include breakpoint-up(medium) {
+            flex-direction: row;
+            padding: 0;
+            max-width: 72rem;
+        }
     }
 
     &__image {
         flex: 1;
+        margin-bottom: 2rem;
+
+        @include breakpoint-up(medium) {
+            margin-bottom: 0;
+        }
 
         img {
-            width: 100%;
+            width: 95%;
+            display: block;
+            margin: auto;
+
+            @include breakpoint-up(medium) {
+                width: 100%;
+            }
         }
     }
 
@@ -21,16 +40,28 @@
         flex: 1;
 
         &__wrapper {
-            width: 91%;
+            width: 100%;
             margin-left: auto;
             line-height: 1.5;
-            font-size: 15px;
+            font-size: 14px;
+
+            @include breakpoint-up(medium) {
+                font-size: 15px;
+                width: 91%;
+            }
 
             h1 {
-                width: 20rem;
-                font-size: 38px;
+                width: auto;
+                font-size: 18px;
                 line-height: 1.3;
                 margin-bottom: 0;
+                font-weight: 600;
+
+                @include breakpoint-up(medium) {
+                    font-size: 38px;
+                    width: 20rem;
+                    font-weight: 700;
+                }
             }
 
             p {
@@ -39,15 +70,24 @@
 
             .link {
                 margin-top: 22px;
-                width: 10rem;
+                width: 8rem;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 border-bottom: 1px solid $cyan;
                 padding-bottom: 4px;
 
+                @include breakpoint-up(medium) {
+                    width: 10rem;
+                }
+
                 a {
                     color: $cyan;
+                    font-size: 12px;
+
+                    @include breakpoint-up(medium) {
+                        font-size: inherit;
+                    }
                 }
 
                 &:hover {

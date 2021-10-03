@@ -313,16 +313,41 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 72rem;
   margin: auto;
+  flex-direction: column;
+  padding: 5rem 0;
+  max-width: 85%;
+}
+
+@media (min-width: 40em) {
+  .stay-productive__wrapper {
+    flex-direction: row;
+    padding: 0;
+    max-width: 72rem;
+  }
 }
 
 .stay-productive__image {
   flex: 1;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 40em) {
+  .stay-productive__image {
+    margin-bottom: 0;
+  }
 }
 
 .stay-productive__image img {
-  width: 100%;
+  width: 95%;
+  display: block;
+  margin: auto;
+}
+
+@media (min-width: 40em) {
+  .stay-productive__image img {
+    width: 100%;
+  }
 }
 
 .stay-productive__text {
@@ -330,17 +355,33 @@ h3 {
 }
 
 .stay-productive__text__wrapper {
-  width: 91%;
+  width: 100%;
   margin-left: auto;
   line-height: 1.5;
-  font-size: 15px;
+  font-size: 14px;
+}
+
+@media (min-width: 40em) {
+  .stay-productive__text__wrapper {
+    font-size: 15px;
+    width: 91%;
+  }
 }
 
 .stay-productive__text__wrapper h1 {
-  width: 20rem;
-  font-size: 38px;
+  width: auto;
+  font-size: 18px;
   line-height: 1.3;
   margin-bottom: 0;
+  font-weight: 600;
+}
+
+@media (min-width: 40em) {
+  .stay-productive__text__wrapper h1 {
+    font-size: 38px;
+    width: 20rem;
+    font-weight: 700;
+  }
 }
 
 .stay-productive__text__wrapper p {
@@ -349,7 +390,7 @@ h3 {
 
 .stay-productive__text__wrapper .link {
   margin-top: 22px;
-  width: 10rem;
+  width: 8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -357,8 +398,21 @@ h3 {
   padding-bottom: 4px;
 }
 
+@media (min-width: 40em) {
+  .stay-productive__text__wrapper .link {
+    width: 10rem;
+  }
+}
+
 .stay-productive__text__wrapper .link a {
   color: #65e2d9;
+  font-size: 12px;
+}
+
+@media (min-width: 40em) {
+  .stay-productive__text__wrapper .link a {
+    font-size: inherit;
+  }
 }
 
 .stay-productive__text__wrapper .link:hover {
@@ -375,20 +429,88 @@ h3 {
 
 .testimonial__container {
   background: #181f2a;
-  padding: 8rem 0;
+  padding: 4.7rem 0;
+}
+
+@media (min-width: 40em) {
+  .testimonial__container {
+    padding: 8rem 0;
+  }
+}
+
+.testimonial__wrapper {
+  background-image: url("../images/bg-quotes.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0;
+  padding-top: 15px;
+  max-width: 75%;
+  margin: 0 auto;
+  background-size: 7.5%;
+  background-position-x: 5px;
+}
+
+@media (min-width: 40em) {
+  .testimonial__wrapper {
+    max-width: 69rem;
+    background-size: auto;
+    padding-top: 2.15rem;
+    background-position-x: initial;
+  }
+}
+
+.testimonial__card {
+  background-color: #202a3c;
+  border-radius: 0.393rem;
+  max-width: 21.2rem;
+  margin-bottom: 1.5rem;
+  padding: 28px 20px 24px;
+}
+
+@media (min-width: 40em) {
+  .testimonial__card {
+    margin-bottom: 0;
+    padding: 40px 24px 24px;
+  }
+}
+
+.testimonial__card:not(:last-child) {
+  margin-right: 0;
+}
+
+@media (min-width: 40em) {
+  .testimonial__card:not(:last-child) {
+    margin-right: 1.8rem;
+  }
 }
 
 .testimonial__card p {
   margin: 0;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  line-height: 1.7;
+}
+
+@media (min-width: 40em) {
+  .testimonial__card p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
 }
 
 .testimonial__card .profile {
   display: flex;
   align-items: center;
+  margin-top: 1.2rem;
 }
 
 .testimonial__card .profile img {
-  width: 45px;
+  width: 23px;
   border-radius: 50%;
 }
 
@@ -396,13 +518,15 @@ h3 {
   margin-left: 0.5rem;
 }
 
-.testimonial__card .profile .info p:first-child {
-  font-size: 0.875rem;
+.testimonial__card .profile .info span:first-child {
+  font-size: 10px;
   font-weight: 600;
   margin-bottom: 3px;
+  display: block;
 }
 
-.testimonial__card .profile .info p:last-child {
-  font-size: 0.75rem;
+.testimonial__card .profile .info span:last-child {
+  font-size: 7px;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
