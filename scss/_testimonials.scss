@@ -1,0 +1,38 @@
+.testimonial {
+    &__container {
+        background: $mainBlue;
+        padding: 8rem 0;
+    }
+
+    &__wrapper {}
+
+    &__card {
+        p {
+            margin: 0;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 45px;
+                border-radius: 50%;
+            }
+
+            .info {
+                margin-left: 0.5rem;
+
+                p:first-child {
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    margin-bottom: 3px;
+                }
+
+                p:last-child {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
+}

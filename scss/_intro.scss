@@ -1,5 +1,26 @@
 .intro {
-    background: $introBlue;
+
+    @media (min-width: 960px) {
+        padding-bottom: 11.8rem;
+    }
+
+    @include breakpoint-up(medium) {
+        padding-top: 4rem;
+        background: url("../images/bg-curvy-desktop.svg");
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 0;
+    }
+
+    @include breakpoint-down(small) {
+        padding-top: 3rem;
+        background: url("../images/bg-curvy-mobile.svg"), linear-gradient($introBlue 61%, $mainBlue 61%);
+        background-position-y: 52%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: -20px;
+    }
 
     &__wrapper {
         display: flex;
@@ -9,6 +30,7 @@
         flex-direction: column;
         width: 80%;
         margin-top: 1rem;
+        max-width: 72rem;
 
         @include breakpoint-up(medium) {
             width: 50%;
@@ -28,10 +50,9 @@
         h1 {
             font-size: 24px;
             line-height: 1.5;
-            margin-top: 36px;
+            margin-top: 30px;
 
             @include breakpoint-up(medium) {
-                margin-top: 16px;
                 font-size: 38px;
             }
         }
