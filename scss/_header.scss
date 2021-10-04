@@ -40,9 +40,15 @@
             a {
                 color: #dad8d8;
                 font-size: 13px;
+                transition: all 0.3s ease-in-out;
 
                 @include breakpoint-up(medium) {
                     font-size: 14.5px;
+                }
+
+                &:hover {
+                    font-weight: bold;
+                    text-decoration: underline;
                 }
 
                 &:not(:last-child) {

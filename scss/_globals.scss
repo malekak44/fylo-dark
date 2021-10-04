@@ -41,11 +41,32 @@ h3 {
     font-weight: bold;
     font-family: $raleway;
     font-size: 13.5px;
-    
+    position: relative;
+    transition: all 0.3s ease-in-out;
+
     @include breakpoint-up(medium) {
         font-size: 15px;
         min-width: 260px;
         padding-top: 17px;
         padding-bottom: 17px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.5);
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+    }
+
+    &:hover {
+        &::before {
+            opacity: 1;
+        }
     }
 }
