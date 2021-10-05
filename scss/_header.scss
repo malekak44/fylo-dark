@@ -1,8 +1,8 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     padding: 1.5rem 1.5rem 0;
+    justify-content: space-around;
 
     @include breakpoint-up(medium) {
         padding: 4.3rem 4.65rem 0;
@@ -27,10 +27,10 @@
     &__links {
         flex: 1;
         display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        font-family: $raleway;
         margin-top: -5px;
+        align-items: center;
+        font-family: $raleway;
+        justify-content: flex-end;
 
         @include breakpoint-up(medium) {
             margin-top: 0;
@@ -39,7 +39,7 @@
         nav {
             a {
                 color: #dad8d8;
-                font-size: 13px;
+                font-size: 0.8125rem;
                 transition: all 0.3s ease-in-out;
 
                 @include breakpoint-up(medium) {

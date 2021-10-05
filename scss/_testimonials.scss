@@ -1,7 +1,7 @@
 .testimonial {
     &__container {
-        background: $mainBlue;
         padding: 4.7rem 0;
+        background: $mainBlue;
 
         @include breakpoint-up(medium) {
             padding: 8rem 0;
@@ -9,38 +9,38 @@
     }
 
     &__wrapper {
-        background-image: url("../images/bg-quotes.png");
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
         padding: 0;
-        padding-top: 15px;
+        display: flex;
         max-width: 75%;
         margin: 0 auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 0.9375rem;
+        justify-content: space-evenly;
+        background-image: url("../images/bg-quotes.png");
+        background-repeat: no-repeat;
         background-size: 7.5%;
         background-position-x: 5px;
 
         @include breakpoint-up(medium) {
             max-width: 69rem;
-            background-size: 4.7%;
             padding-top: 2rem;
+            background-size: 4.7%;
             background-position-x: initial;
         }
     }
 
     &__card {
-        background-color: $testimonialBlue;
-        border-radius: 0.393rem;
         max-width: 21.2rem;
         margin-bottom: 1.5rem;
-        padding: 28px 20px 24px;
+        border-radius: 0.393rem;
+        padding: 1.75rem 1.25rem 1.5rem;
+        background-color: $testimonialBlue;
 
         @include breakpoint-up(medium) {
             margin-bottom: 0;
-            padding: 40px 24px 24px;
+            padding: 2.5rem 1.5rem 1.5rem;
         }
 
         &:not(:last-child) {
@@ -53,24 +53,24 @@
 
         p {
             margin: 0;
-            font-weight: 400;
-            font-size: 10px;
-            letter-spacing: 0.5px;
             line-height: 1.7;
+            font-weight: 400;
+            font-size: 0.625rem;
+            letter-spacing: 0.5px;
 
             @include breakpoint-up(medium) {
-                font-size: 13px;
                 line-height: 1.5;
+                font-size: 0.8125rem;
             }
         }
 
         .profile {
             display: flex;
-            align-items: center;
             margin-top: 1.2rem;
+            align-items: center;
 
             img {
-                width: 23px;
+                width: 1.5rem;
                 border-radius: 50%;
             }
 
@@ -78,15 +78,16 @@
                 margin-left: 0.5rem;
 
                 span:first-child {
-                    font-size: 10px;
+                    display: block;
                     font-weight: 600;
                     margin-bottom: 3px;
-                    display: block;
+                    font-size: 0.625rem;
                 }
 
                 span:last-child {
-                    font-size: 7px;
                     display: block;
+                    font-size: 0.5rem;
+                    letter-spacing: 1px;
                 }
             }
         }

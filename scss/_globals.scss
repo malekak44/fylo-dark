@@ -29,26 +29,26 @@ h3 {
 }
 
 .button {
-    display: inline-block;
-    min-width: 240px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    background: linear-gradient(to right, $cyan, $blue);
-    border-radius: 30px;
     color: $white;
-    border: transparent;
     cursor: pointer;
-    font-weight: bold;
-    font-family: $raleway;
+    min-width: 240px;
     font-size: 13.5px;
+    font-weight: bold;
+    padding-top: 1rem;
     position: relative;
+    border: transparent;
+    border-radius: 30px;
+    padding-bottom: 1rem;
+    display: inline-block;
+    font-family: $raleway;
     transition: all 0.3s ease-in-out;
+    background: linear-gradient(to right, $cyan, $blue);
 
     @include breakpoint-up(medium) {
-        font-size: 15px;
         min-width: 260px;
         padding-top: 17px;
         padding-bottom: 17px;
+        font-size: 0.9375rem;
     }
 
     &::before {
@@ -58,9 +58,9 @@ h3 {
         right: 0;
         bottom: 0;
         left: 0;
+        opacity: 0;
         border-radius: 30px;
         background-color: rgba(255, 255, 255, 0.5);
-        opacity: 0;
         transition: opacity 150ms ease-in-out;
     }
 

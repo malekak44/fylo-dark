@@ -1,7 +1,7 @@
 .early-access {
+    min-height: 29rem;
     text-align: center;
     position: relative;
-    min-height: 29rem;
     background-color: $mainBlue;
 
     @include breakpoint-up(medium) {
@@ -24,18 +24,17 @@
     }
 
     &__wrapper {
-        padding: 1.4rem 1.8rem 2.3rem;
-        border-radius: 0.5rem;
-        background-color: $introBlue;
         margin: 0 auto;
-        box-shadow: 0.5rem 0.5rem 0.8rem rgba(0, 0, 0, 0.25);
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
         width: 90%;
-        max-width: 86.3rem;
+        z-index: 2;
+        border-radius: 0.5rem;
+        background-color: $introBlue;
+        padding: 1.4rem 1.8rem 2.3rem;
+        transform: translate(-50%, -50%);
+        box-shadow: 0.5rem 0.5rem 0.8rem rgba(0, 0, 0, 0.25);
 
         @include breakpoint-up(medium) {
             width: 60%;
@@ -43,19 +42,19 @@
         }
 
         h1 {
-            font-size: 18px;
             font-weight: 600;
-            margin: 16px auto 18px;
+            font-size: 1.125rem;
+            margin: 1rem auto 1.125rem;
 
             @include breakpoint-up(medium) {
-                font-size: 30px;
-                margin: 16px auto 22px;
+                font-size: 1.875rem;
+                margin: 1rem auto 1.375rem;
             }
         }
 
         p {
-            font-size: 14px;
             line-height: 1.5;
+            font-size: 0.875rem;
 
             @include breakpoint-up(medium) {
                 font-size: 13.5px;
@@ -65,27 +64,25 @@
         form {
             display: flex;
             margin-top: 2.1rem;
-            flex-direction: row;
-            justify-content: space-between;
             flex-direction: column;
+            justify-content: space-between;
 
             @include breakpoint-up(medium) {
                 flex-direction: row;
             }
 
             input {
+                width: 100%;
+                height: 45px;
                 border: none;
                 outline: none;
-                font-family: $openSans;
                 font-weight: 400;
-                border-radius: 2.4rem;
-                height: 45px;
                 line-height: 1.333;
-                padding: 8px 2rem;
-                max-width: 48rem;
-                width: 100%;
+                padding: 0.5rem 2rem;
                 margin-right: 1.6rem;
                 margin-bottom: 1.5rem;
+                border-radius: 2.4rem;
+                font-family: $openSans;
 
                 @include breakpoint-up(medium) {
                     margin-bottom: 0;
@@ -93,11 +90,11 @@
             }
 
             .button {
-                min-width: 185px;
-                font-size: 13px;
-                padding-top: 16px;
                 height: 45px;
-                padding-bottom: 15px;
+                min-width: 185px;
+                padding-top: 1rem;
+                font-size: 0.8125rem;
+                padding-bottom: 0.9375rem;
             }
         }
     }
